@@ -25,6 +25,8 @@
     "@sentry/nextjs": "^8.32.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "glob": "^11.0.0",
+    "inflight": "^1.0.6",
     "jsm-editor": "^0.0.12",
     "lexical": "^0.16.1",
     "lucide-react": "^0.446.0",
@@ -32,6 +34,7 @@
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
+    "rimraf": "^6.0.1",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
