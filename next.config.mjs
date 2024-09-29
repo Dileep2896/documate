@@ -14,6 +14,8 @@ export default withSentryConfig(
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
+    telemetry: false,
+
     org: "rochester-institute-of-tech-5p",
     project: "javascript-nextjs",
 
