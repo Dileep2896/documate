@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DocuMate
 
-## Getting Started
+## Overview
 
-First, run the development server:
+DocuMate is a real-time collaborative document editing and management platform built using modern web technologies. The project enables users to authenticate, create, manage, and share documents with multiple users, providing features like live collaboration, comments, and access control.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: The framework for building the frontend with server-side rendering and API routes.
+- **TypeScript**: For static typing and improved code quality across the application.
+- **Liveblocks**: Real-time presence and collaboration engine to allow multiple users to work on the same document.
+- **Lexical Editor**: A rich-text editor that powers the collaborative editing experience, with plugins for comments and more.
+- **ShadCN**: A customizable design system for React.
+- **Tailwind CSS**: A utility-first CSS framework for building responsive and modern UIs.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Authentication
 
-## Learn More
+- **GitHub Authentication**: Secure sign-in and sign-out using GitHub credentials through **NextAuth**.
+- **Session Management**: Handles user sessions to enable persistent logins and secure access.
 
-To learn more about Next.js, take a look at the following resources:
+### Collaborative Text Editor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Real-time Collaboration**: Users can edit the same document simultaneously with live updates and conflict resolution using **Liveblocks**.
+- **Lexical Editor**: Provides a rich-text editing experience with formatting, inline comments, and user-friendly UI.
+- **Presence Indicators**: Displays active collaborators in real-time within the document, enabling smooth collaboration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Document Management
 
-## Deploy on Vercel
+- **Create Documents**: Users can create new documents which are automatically saved and listed in their document dashboard.
+- **Delete Documents**: Users can delete documents they own from their dashboard.
+- **Share Documents**: Share documents via email or link with view/edit permissions for granular access control.
+- **List Documents**: Lists all documents owned or shared with the user, with features for sorting and searching.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Comments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Inline Comments**: Users can add comments to specific text within a document for collaborative discussions.
+- **General Comments**: General comments can be added at the document level, providing a space for feedback.
+- **Threaded Discussions**: Comments can be threaded for deeper discussions and easy-to-follow conversation flow.
+
+### Notifications
+
+- **Document Sharing**: Users receive notifications when a document is shared with them.
+- **Comments & Collaborator Activities**: Notifications are sent for new comments and activities by collaborators.
+
+### Responsive Design
+
+- **Mobile-Friendly**: The application is fully responsive, providing a seamless experience across desktop, tablet, and mobile devices.
+
+## Code Architecture & Reusability
+
+The project adheres to modular code architecture principles with reusable components and hooks, ensuring maintainability and scalability of the codebase.
+
+## Live Project
+
+Visit the live version of DocuMate [here](https://documate-swart.vercel.app).
+
+## Application Images
+
+| Login Page                        | Home Page                       |
+| --------------------------------- | ------------------------------- |
+| ![Login Page](./public/login.png) | ![Home Page](./public/home.png) |
+
+| Document Page                           | Share Document Page                         |
+| --------------------------------------- | ------------------------------------------- |
+| ![Document Page](./public/document.png) | ![Share Document Page](./public/invite.png) |
+
+> _Note: Replace `path/to/` with the actual paths to the images._
